@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Историческая карта мира</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <div id="controls">
+        <!-- Изменили годы на 1530–1600 -->
+        <button class="era-btn active" data-era="ivan">Иван Грозный (1530–1600)</button>
+        <button class="era-btn" data-era="renaissance">Ренессанс (1600–1689)</button>
+        <button class="era-btn" data-era="enlightenment">Просвещение (1689–1789)</button>
+        <button class="era-btn" data-era="napoleonic">Наполеоновские войны (1789–1815)</button>
+        <button class="era-btn" data-era="industrial">Индустриальная эпоха (1815–1900)</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="info-modal" class="hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="country-title">Название страны</h2>
+            <div id="country-info"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
