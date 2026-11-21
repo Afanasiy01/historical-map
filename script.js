@@ -134,7 +134,7 @@ function loadEra(eraName) {
         });
 }
 
-// 🔥 УМНАЯ ФУНКЦИЯ ВЫВОДА ИНФОРМАЦИИ
+//ФУНКЦИЯ ВЫВОДА ИНФОРМАЦИИ
 function showCountryInfo(name, properties) {
     document.getElementById('country-title').innerText = name;
     const infoEl = document.getElementById('country-info');
@@ -184,7 +184,7 @@ function showCountryInfo(name, properties) {
         html += `<p><strong>Расширение границ:</strong><br>${data.expansion}</p>`;
         infoEl.innerHTML = html;
     } else {
-        // 🔥 УМНАЯ ЛОГИКА ДЛЯ ТЕРРИТОРИЙ, КОТОРЫХ НЕТ В JSON
+        // ЛОГИКА ДЛЯ ТЕРРИТОРИЙ, КОТОРЫХ НЕТ В JSON
         let description = "";
         const lowerName = name.toLowerCase();
 
